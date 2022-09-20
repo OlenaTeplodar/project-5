@@ -1,0 +1,36 @@
+.button-color {
+border-radius: 10px;
+border: none;
+background-color: var(--button-color);
+color: var(--button-text-black);
+transition: background-color var(--transition-func);
+font-size: 14px;
+font-weight: 600;
+line-height: 1.29;
+
+&:hover, &:focus {
+    background-color: var(--button-color-accent);
+}
+    &:focus {
+        color: var(--button-text-white);
+    }
+}
+
+.button-transparent {
+    border-radius: 10px;
+    border: 2px solid var(--button-color);
+    background-color: transparent;
+    color: var(--button-text-black);
+    transition: border-color var(--transition-func);
+
+    font-size: 14px;
+font-weight: 600;
+line-height: 1.29;
+    &:focus, &:hover {
+        border-color: var(--button-color-accent);
+    }
+
+    &:focus {
+        color: var(--button-text-white);
+    }
+}
